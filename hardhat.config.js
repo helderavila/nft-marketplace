@@ -9,11 +9,11 @@ module.exports = {
     },
     mumbai: {
       url: process.env.INFURA_URL,
-      accounts: [],
+      accounts: [process.env.ACCOUNT_PRIVATE_KEY],
     },
     mainnet: {
       url: process.env.INFURA_URL_MAINNET,
-      accounts: [],
+      accounts: [process.env.ACCOUNT_PRIVATE_KEY],
     },
   }
 };
