@@ -84,10 +84,9 @@ export default function Home() {
   return (
     <Box maxWidth='1200px' mx='auto'>
       <Grid templateColumns='repeat(5, 1fr)' gap={6}>
-        <Box w='100%' h='10' bg='blue.500' />
         {nfts.map((nft, i) => (
           <Box key={i}>
-            <Image src={nft.image} alt={nft.name} />
+            <Image src={nft.image} alt={nft.name} height="350" width="350" />
             <Box>
               <Text>{nft.name}</Text>
               <Text>{nft.description}</Text>
